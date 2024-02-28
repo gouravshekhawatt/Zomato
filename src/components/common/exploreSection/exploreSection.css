@@ -1,0 +1,18 @@
+.explore-section{
+    margin-top: 16px;
+}
+.explore-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width:769px){
+    .explore-section{
+        margin: 10px 16px 20px;
+    }
+    .explore-grid{
+        justify-content: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,149 @@
+.headerr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.headerr-logo{
+    height: 27px;
+    max-width:140px;
+    margin-right: 24px;
+}
+
+.Delhi{
+    font-size: 1.5rem;
+}
+
+.headerr-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+.headerr-location-search-container{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: var(--primary-box-shadow);
+    border: 1px solid var(--border-white);
+    width: 70%;
+    background: var(--primary-bg);
+}
+
+.location-wrapper{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0px 10px;
+
+}
+.location-icon-name{
+    display: flex;
+    color: var(--zomato-gray);
+}
+.location-icon{
+    color: var(--zomato-red);
+    font-size: 20px;
+    margin-right: 8px;
+}
+.location-search-separator{
+    height: 20px;
+    border: 0.5px solid var(--gray);
+   
+}
+
+.headerr-searchBar{
+    display: flex;
+    flex: 2;
+
+}
+.search-icon{
+    font-size: 20px;
+    color: var(--zomato-gray);
+    margin: 0px 12px ;
+}
+.search-input{
+    border: none;
+    outline: none;
+    width: 60%;
+    font-size: 14px;
+}
+.profile-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    align-items: center;
+}
+.headerr-profile-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0.5px solid var(--gray);
+}
+.headerr-username{
+    font-size: 16px;
+    font-weight: 600;
+}
+.profile-options-icon{
+    font-size: 20px;
+}
+.headerr-mobile{
+    display: none;
+}
+
+/* responsive css for mobile */
+
+@media (max-width:769px){
+    .headerr{
+        display: none;
+    }
+    .headerr-mobile{
+        display: block;
+    }
+    .logo-profile-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: inherit ;
+        background-color: var(--primary-bg);
+        padding: 0px 10px;
+        box-shadow: var(--headerr-shadow);
+        height: 56px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+    .headerr-mobile-logo{
+        height: 20px;
+        width: 94px;
+    }
+    .headerr-mobile-profile-image{
+        width: 32px;
+        height: 32px;
+    }
+    .headerr-mobile-location-search-container{
+        justify-content: space-between;
+        width: inherit ;
+        padding: 11px 14px 11px 25px;
+        border: none;
+        
+    }
+    .mobile-location-icon-name{
+        color: var(--heading-text);
+    }
+    .headerr-mobile-searchBar{
+       height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        padding: 9px;
+        border: 1px solid var(--border-white);
+        background-color: var(--inactive-color); 
+    }
+    .mobile-search-icon{
+        color: var(--headerr-shadow);
+    }
+    
+}

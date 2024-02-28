@@ -1,0 +1,19 @@
+.filters{
+    padding: 16px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width:769px){
+    .filters{
+        overflow-x: auto;
+        padding: 8px 16px;
+        flex-wrap: nowrap;
+    }
+    .filters::-webkit-scrollbar{
+        display: none;
+        width: 0px !important;
+    }
+    
+}
